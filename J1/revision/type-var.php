@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
 
         <title>PHP-OOP-1 (types & variables)</title>
         <meta name="description" content="PHP-OOP-1 (types & variables)">
@@ -20,7 +19,10 @@
                 <a href="../index.php">(0) Home Page</a>
             </li>
             <li>
-                <a href="conditions.php">(II) Condition</a>
+                <a href="conditions.php">(II) Conditions</a>
+            </li>
+            <li>
+                <a href="loops.php">(III) Loops</a>
             </li>
         </ol>
 

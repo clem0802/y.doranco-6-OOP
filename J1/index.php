@@ -28,7 +28,10 @@
                 <a href="revision/type-var.php">(I) Types et Variables</a>
             </li>
             <li>
-            <a href="revision/conditions.php">(II) Condition</a>
+            <a href="revision/conditions.php">(II) Conditions</a>
+            </li>
+            <li>
+            <a href="revision/loops.php">(III) Loops</a>
             </li>
         </ol>
 
