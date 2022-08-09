@@ -21,11 +21,14 @@
 
 
         <ol>
-            <li>
+            <!-- <li>
                 <a target="_blank" href="https://google.com">Google (testing)</a>
+            </li> -->
+            <li>
+                <a href="revision/type-var.php">(I) Types et Variables</a>
             </li>
             <li>
-                <a target="_blank" href="revision/type-var.php">Les types et variables</a>
+            <a href="revision/conditions.php">(II) Condition</a>
             </li>
         </ol>
 

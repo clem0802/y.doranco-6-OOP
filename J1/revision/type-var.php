@@ -2,19 +2,30 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
 
         <title>PHP-OOP-1 (types & variables)</title>
+        <meta name="description" content="PHP-OOP-1 (types & variables)">
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
     </head>
 
     <body>
 
-        <h1>PHP-OOP-1 (types & variables)</h1>
+        <h1>PHP-OOP-1 (I) Types & Variables (JOUR1)</h1>
         <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/type_var.php -->
 
+        <ol>
+            <li>
+                <a href="../index.php">(0) Home Page</a>
+            </li>
+            <li>
+                <a href="conditions.php">(II) Condition</a>
+            </li>
+        </ol>
+
         <?php
+            echo "<h3>(1) STRING</h3>";
             // Ajouter du texte dans le fichier HTML final 
             echo "<span>Hello: Types & Variables</span><br>";
 
@@ -25,12 +36,15 @@
             echo $hello;
 
             // Concaténer 3 chaînes de caractères pour en faire une seule
-            echo '<h3>' . $hello . " " . "Samy :)" . '</h3>';
+            echo '<h4>' . $hello . " " . "Samy :)" . '</h4>';
 
             // Les double guillemets permettent de directement lire la valeur d'une variable sans concaténation
             echo "<h6>$hello</h6>";
-
             echo "<hr>";
+
+
+            // *********************************************
+            echo "<h3>(2) STRING (phrases)</h3>";
             echo '<p>' . "Samy" . " " . $hello . '</p>';
             echo '<p>' . $hello . '</p>';
 
@@ -38,25 +52,24 @@
             $hello = "On peut réaffecter une nouvelle valeur à une variable";
             // la valeur de la variable hello a changé
             echo "<p>$hello</p>";
-        ?>
-            
 
-        <?php
             // EXO 1
             // Déclarer deux variables: nom et prenom
             $nom = "TAN";
             $prenom = "Clémence";
             // Afficher la phrase: Salut, (nom) (prenom), comment allez-vous? 
-            echo '<p>' . $nom . " " . $prenom . " " . ", comment allez-vous?";
-            echo "<p> $nom $prenom, comment allez-vous?";
+            echo '<p>Salut, ' . $nom . ' ' . $prenom . ', Comment allez-vous?</p>';
+            echo "<p>Salut, $nom $prenom, comment allez-vous?</p>";
 
             $name = 'idomar';
             $firstname = 'fatiha';
-            echo '<p>' . $name . " " . $firstname . " " . ", comment allez-vous?";
+            echo '<p>' . $name . " " . $firstname . " " . ", comment allez-vous?</p>";
             echo "<hr>";
 
 
+            // *********************************************
             // les nombres / Numbers
+            echo "<h3>(3) NUMBERS</h3>";
             $count = 12;
             $pi = 3.14;
             $countPlusCinq = $count + 10;
@@ -71,6 +84,9 @@
             echo "<hr>";
 
 
+            // *********************************************
+            // les nombres / Numbers
+            echo "<h3>(4) OPERATIONS</h3>";
             $a = 64;
             $b = 8;
             echo "<p>a = 64</p>";
@@ -92,7 +108,6 @@
             echo "<p>nombre d'oeufs = $nbOeufs</p>";
             $nbOeufs = $nbOeufs - 1; // 3
             echo "<p>nombre d'oeufs = $nbOeufs</p>";
-            echo "<hr>";
 
 
             // Alternatives:
@@ -100,19 +115,20 @@
             echo "<p>nombre d'oeufs = $nbOeufs</p>";
             $nbOeufs *= 2; // 16
             echo "<p>nombre d'oeufs = $nbOeufs</p>";
-
-
-            echo "<br>";
-            echo "<br>";
-            echo "<br>";
-            echo "<br>";
+            echo "<hr>";
         ?>
+
 
         <?php
+        // *********************************************
+        echo "<h3>(5) BOOLEAN (jour-2)</h3>";
+        $vrai = true;
+        $faux = false;
+
+        echo "<hr>";
+        // 
         ?>
 
-        <?php
-        ?>
 
         <?php
             // error_reporting(-1);
@@ -126,6 +142,10 @@
             // settings: F5
             // format save
             // COCHER Format On Save
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
         ?>
     </body>
 </html>
