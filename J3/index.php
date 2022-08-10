@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <h1>PHP-OOP-2</h1>
+        <h1>PHP-OOP-3</h1>
         <!-- (myPATH) http://localhost/y.doranco-6-OOP/J3/index.php -->
         <?php
         ?>

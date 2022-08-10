@@ -25,13 +25,13 @@
                 <a target="_blank" href="https://google.com">Google (testing)</a>
             </li> -->
             <li>
-                <a href="revision/type-var.php">(I) Types et Variables</a>
+                <a href="revision/1type-var.php">(I) Type et Variable</a>
             </li>
             <li>
-            <a href="revision/conditions.php">(II) Conditions</a>
+            <a href="revision/2condition.php">(II) Condition</a>
             </li>
             <li>
-            <a href="revision/loops.php">(III) Loops</a>
+            <a href="revision/3loop-array.php">(III) Loop</a>
             </li>
         </ol>
 

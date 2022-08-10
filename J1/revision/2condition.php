@@ -11,19 +11,23 @@
     </head>
 
     <body>
+        <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/2condition.php -->
+        <?php 
+            include_once "../components/navbar.php"; 
+        ?>
+        
         <!-- TITLE -->
         <section>
             <h1>(II) Conditions (JOUR2)</h1>
-            <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/conditions.php -->
             <ol>
                 <li>
                     <a href="../index.php">(0) Home Page</a>
                 </li>
                 <li>
-                    <a href="type-var.php">(I) Types et Variables</a>
+                    <a href="1type-var.php">(I) Types et Variable</a>
                 </li>
                 <li>
-                    <a href="loops.php">(III) Loops</a>
+                    <a href="3loop-array.php">(III) Loop</a>
                 </li>
             </ol>
         </section>

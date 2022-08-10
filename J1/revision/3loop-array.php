@@ -6,6 +6,15 @@
 			'age' => 28,
 			'passion' => 'Programmation',
 			'avatar' => "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            // 'posts' => 
+            //     [
+            //         'title' => 'Un titre',
+            //         'content' => 'Un contenu',
+            //     ],
+            //     [
+            //         'title' => 'Un titre',
+            //         'content' => 'Un contenu',
+            //     ],
 		],
 		[
 			'email' => 'clemence@gmail.com',
@@ -58,17 +67,21 @@
     </head>
     
     <body>
+
+            <?php 
+            include_once "../components/navbar.php"; 
+            ?>
             <h1>(III) Loops (JOUR2)</h1>
-            <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/loops.php -->
+            <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/3loop-array.php -->
             <ol>
                 <li>
                     <a href="../index.php">(0) Home Page</a>
                 </li>
                 <li>
-                    <a href="type-var.php">(I) Types et Variables</a>
+                    <a href="1type-var.php">(I) Type et Variable</a>
                 </li>
                 <li>
-                    <a href="conditions.php">(II)Conditions</a>
+                    <a href="2condition.php">(II)Condition</a>
                 </li>
             </ol>
 
@@ -118,6 +131,7 @@
                 echo "<hr>";
             ?>
 
+            <!-- listCours -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -142,7 +156,7 @@
                     // Loop1: $i = 3 / listCourst[3] = PHP
                     // Loop1: $i = 4 / listCourst[4] = React
                     // Loop1: $i = 5 / listCourst[5] = WordPress
-                    echo "<h3>(5)Loop over an Array</h3>";
+                    echo "<h3>(5) Loop over an Array</h3>";
                     for($i=0; $i<count($listCours); $i++){
                         echo '<p>'. $listCours[$i] .'</p>';
                     }
@@ -150,10 +164,11 @@
                 ?>
             </section>
 
+            <!-- user profile -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
-                    echo "<h3>(6)Array - user1 (Tableau Normal)</h3>";
+                    echo "<h3>(6) Array - user1 (Tableau Normal)</h3>";
                     $user1 = ['sam.djm93@gmail.com', 'Sam', 28, 'programmation'];
                     var_dump($user1);
                     echo '<div>
@@ -166,8 +181,9 @@
                 ?>
             </section>
 
+            <!-- user profile (array associatif) -->
             <?php 
-                echo "<h3>(7)Array - user2 (Tableau Associatif)</h3>";
+                echo "<h3>(7) Array - user2 (Tableau Associatif)</h3>";
                 $user2 = ['username'=>'Samantha', 'avatar' => "https://images.unsplash.com/photo-1492175742197-ed20dc5a6bed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxhZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", 'email'=>'sam.djm93@gmail.com',  'age'=>28, 'passion'=>'programmation'];
 
                 var_dump($user2);
@@ -182,7 +198,7 @@
             ?>
 
             <?php 
-                echo "<h3>(8)EXO (Tableau-Array ASSOCIATIF)</h3>";
+                echo "<h3>(8) EXO (Tableau-Array ASSOCIATIF)</h3>";
                 // (1) déclarer un array associatif représentatnt un article:
                     // title
                     // content
@@ -196,10 +212,6 @@
                       </div>';
                 echo "<hr>";
             ?>
-            <!-- <div>
-                    <h1>Title</h1>
-                    <p>Content</p>
-                 </div> -->
 
             <?php 
                 echo "<h3>(9) Array inside a Long Array (USERS)</h3>";
@@ -224,6 +236,63 @@
                     echo "<hr>";
                 }
             ?>
+
+            <!-- cours1 (push, pop) JOUR3 -->
+            <!-- ------------------------------------------------- --> 
+            <section>
+                <?php 
+                    echo "<h3>(10) Fonctions natives des tableaux (arrays)</h3>";
+                    $cours1 = ['HTML', 'CSS', 'PHP'];
+                    foreach($cours1 as $cle => $valeur){
+                        echo "<p>La clé: $cle</p>";
+                        echo "<p>La valeur: $valeur</p>";
+                    }
+                    var_dump($cours1);
+                    // ajouter un élém à la fin du array
+                    array_push($cours1, "JavaScript");
+                    echo "<br/>";
+                    var_dump($cours1);
+                    // supprimer le dernier élem du array
+                    array_pop($cours1);
+                    echo "<br/>";
+                    var_dump($cours1);
+                    echo "<hr>";
+                ?>
+            </section>
+
+            <!-- users (foreach) -->
+            <!-- ------------------------------------------------- --> 
+            <section>
+                <?php 
+                    echo "<h3>(11) loop spécial tableau (array)</h3>";
+
+                    foreach($users as $key => $user){
+                        echo '<p>User ' . $key . ': ' . $user['username'] . '</p>';
+                    }
+                    echo "<hr>";
+
+
+                    // $cle = "title" & "content" 
+                    // $valeur = "Untitre" & "Un contenu" 
+                    $post = ['title' => 'Un titre', 'content' => 'Un contenu'];
+                    foreach ($post as $cle => $valeur){
+                        echo "<p>La clé: $cle</p>";
+                        echo "<p>La valeur: $valeur</p>";
+                    }
+                    echo "<hr>";
+
+
+                    foreach($users as $key => $user){
+                        echo "<h4>User n° $key</h4>";
+                        foreach($user as $key => $value){
+                            echo "<p>La clé: $key</p>";
+                            echo "<p>La clé: $value</p>";
+                        }
+                        echo "<hr>";
+                    }
+                    
+                ?>
+            </section>
 
             <?php 
                 echo "<br>";

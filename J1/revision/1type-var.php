@@ -4,25 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>PHP-OOP-1 (types & variables)</title>
+        <title>PHP-OOP-1 (Types & Variables)</title>
         <meta name="description" content="PHP-OOP-1 (types & variables)">
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
     </head>
 
     <body>
 
+        <?php 
+            include_once "../components/navbar.php"; 
+        ?>
         <h1>PHP-OOP-1 (I) Types & Variables (JOUR1)</h1>
-        <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/type_var.php -->
+        <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/1type_var.php -->
 
         <ol>
             <li>
                 <a href="../index.php">(0) Home Page</a>
             </li>
             <li>
-                <a href="conditions.php">(II) Conditions</a>
+                <a href="2condition.php">(II) Condition</a>
             </li>
             <li>
-                <a href="loops.php">(III) Loops</a>
+                <a href="3loop-array.php">(III) Loop</a>
             </li>
         </ol>
 
