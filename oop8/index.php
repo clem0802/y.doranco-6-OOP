@@ -62,11 +62,13 @@
         ?>
 
         <!-- loop  over all users' name -->
+        <!-- Samy, Gwenn, Fatiha, Snoopy, PawPatrol, Tintin, Ironman -->
         <!-- ************************************ -->
         <?php 
             foreach($users as $key => $value){
                 echo '
                     <div>
+                        <h3>' . $value['id'] . '</h3>
                         <h3>' . $value['nom'] . '</h3>
                     </div>
                 ';
@@ -75,7 +77,7 @@
         ?>
 
         <!-- ************************************ -->
-        <label for="choix">Quel sont vos fruits préférés</label>
+        <label for="choix">Quel sont vos fruits préférés?</label>
         <p>
             <?php
                 $fruits = ["Fraise", "Pèche", "Poire", 'Pomme', 'Abricot'];
@@ -83,6 +85,8 @@
                     echo "<input type='checkbox' value=$fruit name=$fruit> $fruit";
                 }
             echo '<hr>';
+            echo '<br>';
+            echo '<br>';
             ?>
         </p>
 
@@ -90,7 +94,7 @@
         <!-- les ÉTAPES -->
         <!-- ************************************ -->
         <!-- CINNEXION à la BDD -->
-        <!-- 1.1 Créer la BDD phpmyadmin -->
+        <!-- 1.1 Créer la BDD phpMyAdmin -->
         <!-- 1.2 récupérer les crédentials -->
         <!-- 1.3 utiliser mysqli_connect(username...) -->
         <!-- EXÉCUTER la requête QUERY SQL -->

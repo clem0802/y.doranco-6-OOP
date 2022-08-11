@@ -19,26 +19,17 @@
         <!-- TITLE -->
         <section>
             <h1>PHP-OOP8-Samy (II) Conditions</h1>
-            <!-- <ol>
-                <li>
-                    <a href="../index.php">(0) Home Page</a>
-                </li>
-                <li>
-                    <a href="1type-var.php">(I) Types et Variable</a>
-                </li>
-                <li>
-                    <a href="3loop-array.php">(III) Loop</a>
-                </li>
-            </ol> -->
         </section>
 
+        
+        <!-- ******************************************* -->
         <!-- (1) condition IF // (2) condition IF  ELSE -->
         <section>
             <?php
                 echo "<h3>(1) condition IF</h3>";
                 $isPermis = true;
                 if($isPermis){
-                    echo "<p>Vous avez le permis</p>";
+                    echo "<p>Vous avez le permis.</p>";
                     echo "<p>Vous pouvez conduire!</p>";
                 }
                 echo "<hr>";
@@ -47,7 +38,7 @@
             <?php
                 echo "<h3>(2) condition IF  ELSE</h3>";
                 if($isPermis){
-                    echo "<p>Vous avez le permis</p>";
+                    echo "<p>Vous avez le permis.</p>";
                     echo "<p>Vous pouvez conduire!</p>";
                 } else{
                     echo "<p>Vous ne pouvez pas conduire!</p>";
@@ -56,31 +47,34 @@
             ?>
         </section>
 
+        
+        <!-- ******************************************* -->
         <!-- (3) Opérateur de comparaison -->
         <section>
             <?php
                 echo "<h3>(3) Opérateur de comparaison</h3>";
-                echo "<h6>Égalité des valeurs:</h6>";
+                echo "<h5>Égalité des valeurs:</h5>";
                 $a = 0;
                 $b = 10;
                 $isEqual = $a == $b;
-                echo "<p>$a == $b</p>";
-                var_dump($isEqual);
-
-                echo "<h6>Inégalité des valeurs:</h6>";
-                $isNotEqual = $a != $b;
-                echo "<p>$a != $b</p>";
-                var_dump($isNotEqual);
+                echo "<p>$a == $b</p>"; 
+                var_dump($isEqual); // bool(false)
                 echo "<hr>";
 
-                echo "<h6>Supérieur à:</h6>";
+                echo "<h5>Inégalité des valeurs:</h5>";
+                $isNotEqual = $a != $b;
+                echo "<p>$a != $b</p>";
+                var_dump($isNotEqual); // bool(true)
+                echo "<hr>";
+
+                echo "<h5>Supérieur à:</h5>";
                 echo "<p>$a >= $b</p>";
                 var_dump($a >= $b);
                 echo "<p>$a > $b</p>";
                 var_dump($a > $b);
                 echo "<hr>";
 
-                echo "<h6>Inférieur à:</h6>";
+                echo "<h5>Inférieur à:</h5>";
                 echo "<p>$a <= $b</p>";
                 var_dump($a <= $b);
                 echo "<p>$a < $b</p>";
@@ -89,6 +83,8 @@
             ?>
         </section>
 
+
+        <!-- ******************************************* -->
         <!-- (4) Exemple d'utilisation -->
         <section>
             <?php 
@@ -96,18 +92,20 @@
                 $numA = 0;
                 $numB = 1;
                 if ($numA >= $numB){
-                    echo "<p>num A est supérieur à numB</p>";
+                    echo "<p>numA est supérieur à numB</p>";
                 } else{
-                    echo "<p>num A est inférieur à numB</p>";
+                    echo "<p>numA est inférieur à numB</p>";
                 }
                 echo "<hr>";
             ?>
         </section>
 
+
+        <!-- ******************************************* -->
         <!-- (5) Opérateurs de logique -->
         <section>
             <?php 
-                echo "<h3>(5) Opérateurs de logique</h3>";
+                echo "<h3>(5) Opérateurs de logique: && ||</h3>";
                 echo "<p>opérateur &&</p>";
                 $isPermis = true;
                 $isMajeur = true;
@@ -131,12 +129,14 @@
             ?>
         </section>
 
-        <!-- (6) EXO -->
+
+        <!-- ******************************************* -->
+        <!-- (6) EXO âges-->
         <?php
-            echo "<h3>(6) EXO âge</h3>";
+            echo "<h3>(6) EXO âges</h3>";
             echo "<p>exercie sur les différentes tranches d'âge et le nom associé</p>";
             // Exercice
-            // Ecrire un algorithme a partir d’une variable age
+            // Écrire un algorithme a partir d’une variable âge
             // affiche :
             // - "Poussin" de 6 à 7 ans
             // - "Pupille" de 8 à 9 ans
@@ -158,6 +158,8 @@
             echo "<hr>";
         ?>
 
+
+        <!-- ******************************************* -->
         <!-- (7) Opérateur Ternaire -->
         <?php
             echo "<h3>(7) Opérateur Ternaire</h3>";
@@ -165,23 +167,25 @@
             $isPermis = true;
             echo $isPermis ? "Vous pouvez conduire" : "Vous ne pouvez pas conduire!";
             echo "<hr>";
-
         ?>
 
+
+        <!-- ******************************************* -->
         <!-- (8) SWITCH (DATE) -->
         <?php
             echo "<h3>(8) Switch (DATE)</h3>";
             // Exercice
-
             // survoler sur le mot date, et on aura tous les noms
-            $day = date('N'); // 1-2-3-4-5-6-7
+            $day = date('N'); 
+            // $day = date('N'); // 1-2-3-4-5-6-7
             // $day = date('D'); // Mon Tue Wed Thurs Fri... 
             // $day = date('d'); // 1-2-3-4-5... 31
             // $day = date('r'); // date complète
-            var_dump($day);
+            var_dump($day); // string(1) "4"
+
             switch ($day) {
                 case 1:
-                    echo '<pLundi</p>';
+                    echo '<p>Lundi</p>';
                     break;
                 case 2:
                     echo '<p>Mardi</p>';
@@ -206,7 +210,7 @@
             }
             echo "<hr>";
 
-
+            echo "<br>";
             echo "<br>";
             echo "<br>";
             echo "<br>";

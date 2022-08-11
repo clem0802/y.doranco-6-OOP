@@ -50,7 +50,6 @@
 ?>
 
 
-
 <!-- ****************************************************** -->
 <!DOCTYPE html>
 <html lang="en">
@@ -73,44 +72,36 @@
             ?>
             <h1>PHP-OOP8-Samy (III) Loops & Arrays</h1>
             <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/3loop-array.php -->
-            <!-- <ol>
-                <li>
-                    <a href="../index.php">(0) Home Page</a>
-                </li>
-                <li>
-                    <a href="1type-var.php">(I) Type et Variable</a>
-                </li>
-                <li>
-                    <a href="2condition.php">(II)Condition</a>
-                </li>
-            </ol> -->
+
 
             <section>
                 <?php 
+                // (1) Loop FOR +=1
                 echo "<h3>(1) Loop FOR +=1</h3>";
+                echo "<h5>use loop FOR to show even numbers between 0 and 10</h5>";
                 for($i = 0; $i <= 10; $i++){
                     echo "<p>Loop n°$i</p>";
                 }
                 echo "<hr>";
 
 
-                // EXO::
+                // (2) Loop FOR +=2 (EXO)
                 echo "<h3>(2) Loop FOR +=2</h3>";
-                echo "<h6>use loop FOR to show even numbers between 0 and 20</h6>";
+                echo "<h5>Solution1: use loop FOR to show even numbers between 0 and 20</h5>";
                 for($i = 0; $i <= 20; $i+=2){
                     echo "<p>Loop n°$i</p>";
                 }
                 echo "<hr>";
 
 
-                echo "<h6>ALT-1: use loop FOR to show even numbers between 0 and 20</h6>";
+                echo "<h5>Solution2: use loop FOR to show even numbers between 0 and 20</h5>";
                 for ($i=0; $i<=10; $i++){
                     echo '<p>even numbers: ' . ($i * 2) . '</p>';
                 }
                 echo "<hr>";
 
 
-                echo "<h6>ALT-2: use loop FOR to show even numbers between 0 and 20</h6>";
+                echo "<h5>Solution3: use loop FOR to show even numbers between 0 and 20</h5>";
                 for ($i=0; $i<=20; $i++){
                     if($i % 2 === 0){
                         echo '<p>even numbers: ' . ($i) . '</p>';
@@ -121,17 +112,21 @@
                 ?>
             </section>
 
+
+            <!-- (3) Loop WHILE -->
+            <!-- ------------------------------------------------- -->
             <?php 
                 echo "<h3>(3) Loop WHILE</h3>";
                 $i = 0;
                 while($i <= 21){
-                    echo '<p>even numbers: ' . ($i) . '</p>';
+                    echo '<p>loop While: ' . ($i) . '</p>';
                     $i = $i + 3; 
                 }
                 echo "<hr>";
             ?>
 
-            <!-- listCours -->
+
+            <!-- (4) listCours (Array) -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -147,6 +142,8 @@
                 ?>
             </section>
 
+
+            <!-- (5) Loop over an Array -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -164,7 +161,8 @@
                 ?>
             </section>
 
-            <!-- user profile -->
+
+            <!-- (6) Array - user1 (Tableau Normal) -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -181,10 +179,18 @@
                 ?>
             </section>
 
-            <!-- user profile (array associatif) -->
+
+            <!-- (7) Array - user2 (Tableau Associatif) -->
+            <!-- ------------------------------------------------- --> 
             <?php 
                 echo "<h3>(7) Array - user2 (Tableau Associatif)</h3>";
-                $user2 = ['username'=>'Samantha', 'avatar' => "https://images.unsplash.com/photo-1492175742197-ed20dc5a6bed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxhZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", 'email'=>'sam.djm93@gmail.com',  'age'=>28, 'passion'=>'programmation'];
+                $user2 = [
+                    'username'=>'Samantha', 
+                    'avatar' => "https://images.unsplash.com/photo-1492175742197-ed20dc5a6bed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxhZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", 
+                    'email'=>'sam.djm93@gmail.com',  
+                    'age'=>28, 
+                    'passion'=>'programmation'
+                ];
 
                 var_dump($user2);
                 echo '<div>
@@ -197,13 +203,20 @@
                 echo "<hr>";
             ?>
 
+
+            <!-- (8) EXO (Tableau-Array ASSOCIATIF) -->
+            <!-- ------------------------------------------------- --> 
             <?php 
                 echo "<h3>(8) EXO (Tableau-Array ASSOCIATIF)</h3>";
                 // (1) déclarer un array associatif représentatnt un article:
                     // title
                     // content
                 // (2) afficher l'article
-                $article1 = ['title'=>'Summer', 'content' => "Lorem ipsum dolor sit amet. Ea consequuntur similique ad fugiat culpa est minima voluptatem. A eaque voluptas ea beatae exercitationem At officiis doloremque hic laborum odio. Ut optio iusto sed reiciendis dolorum et recusandae libero non quam velit! Sit voluptatem aspernatur sit distinctio ipsam id adipisci impedit non odit suscipit."];
+                $article1 = 
+                [
+                    'title'=>'Summer', 
+                    'content' => "Lorem ipsum dolor sit amet. Ea consequuntur similique ad fugiat culpa est minima voluptatem. A eaque voluptas ea beatae exercitationem At officiis doloremque hic laborum odio."
+                ];
 
                 var_dump($article1);
                 echo '<div>
@@ -213,6 +226,9 @@
                 echo "<hr>";
             ?>
 
+
+            <!-- (9) Array inside a Long Array (USERS) -->
+            <!-- ------------------------------------------------- --> 
             <?php 
                 echo "<h3>(9) Array inside a Long Array (USERS)</h3>";
 
@@ -233,12 +249,14 @@
                         <p>Votre passion est: '. $user['passion'] .'</p>
                     </div>
                     ';
+                    echo "<br>";
                     echo "<hr>";
                 }
             ?>
 
-            <!-- cours1 (push, pop) JOUR3 -->
-            <!-- (10) Fonctions natives des tableaux -->
+
+            <!-- ------------------------------------------------- --> 
+            <!-- (push, pop) (10) Fonctions natives des tableaux (arrays) -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -250,6 +268,7 @@
                         var_dump($valeur); // changé (à revoir)
                     }
                     var_dump($cours1);
+
                     // ajouter un élém à la fin du array
                     array_push($cours1, "JavaScript");
                     echo "<br/>";
@@ -258,11 +277,12 @@
                     array_pop($cours1);
                     echo "<br/>";
                     var_dump($cours1);
+
                     echo "<hr>";
                 ?>
             </section>
 
-            <!-- users (foreach) -->
+            <!-- <h3>(11) loop spécial tableau (array) -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -274,9 +294,14 @@
                     echo "<hr>";
 
 
-                    // $cle = "title" & "content" 
-                    // $valeur = "Untitre" & "Un contenu" 
-                    $post = ['title' => 'Un titre', 'content' => 'Un contenu'];
+                    // $cle = "title" & "content" & "author"
+                    // $valeur = "c'est un titre" & "c'est un contenu" & "Jean est l'auteur"
+                    $post = 
+                    [
+                        'title' => 'c\'est un titre', 
+                        'content' => 'c\'est un contenu',
+                        'author' => 'Jean est l\'auteur'
+                    ];
                     foreach ($post as $cle => $valeur){
                         echo "<p>La clé: $cle</p>";
                         echo "<p>La valeur: $valeur</p>";
@@ -287,12 +312,11 @@
                     foreach($users as $key => $user){
                         echo "<h4>User n° $key</h4>";
                         foreach($user as $key => $value){
-                            echo "<p>La clé: $key</p>";
-                            echo "<p>La clé: $value</p>";
+                            echo "<p>the key: $key</p>";
+                            echo "<p>the value: $value</p>";
                         }
                         echo "<hr>";
                     }
-                    
                 ?>
             </section>
 
