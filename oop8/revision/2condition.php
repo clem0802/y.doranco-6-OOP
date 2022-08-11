@@ -11,15 +11,15 @@
     </head>
 
     <body>
-        <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/2condition.php -->
+        <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/2condition.php -->
         <?php 
-            include_once "../components/navbar.php"; 
+            include_once "/J1/components/navbar.php"; 
         ?>
         
         <!-- TITLE -->
         <section>
             <h1>(II) Conditions (JOUR2)</h1>
-            <ol>
+            <!-- <ol>
                 <li>
                     <a href="../index.php">(0) Home Page</a>
                 </li>
@@ -29,7 +29,7 @@
                 <li>
                     <a href="3loop-array.php">(III) Loop</a>
                 </li>
-            </ol>
+            </ol> -->
         </section>
 
         <!-- (1) condition IF // (2) condition IF  ELSE -->

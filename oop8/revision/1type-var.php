@@ -12,12 +12,12 @@
     <body>
 
         <?php 
-            include_once "../components/navbar.php"; 
+            include_once "./components/navbar.php"; 
         ?>
         <h1>PHP-OOP-1 (I) Types & Variables (JOUR1)</h1>
-        <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/1type_var.php -->
+        <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/1type_var.php -->
 
-        <ol>
+        <!-- <ol>
             <li>
                 <a href="../index.php">(0) Home Page</a>
             </li>
@@ -27,7 +27,7 @@
             <li>
                 <a href="3loop-array.php">(III) Loop</a>
             </li>
-        </ol>
+        </ol> -->
 
         <?php
             echo "<h3>(1) STRING</h3>";

@@ -18,19 +18,23 @@
 <?php 
     $links = [
         [
-            'url' => '../revision/1type-var.php',
+            'url' => '../oop8/index.php',
+            'name' => '(0) HomePage (ACCUEIL) - index.php',
+        ],
+        [
+            'url' => '../oop8/revision/1type-var.php',
             'name' => '(1) Type & Variable',
         ],
         [
-            'url' => '../revision/2condition.php',
+            'url' => '../oop8/revision/2condition.php',
             'name' => '(2) Condition',
         ],
         [
-            'url' => '../revision/3loop-array.php',
+            'url' => '../oop8/revision/3loop-array.php',
             'name' => '(3) Loop & Array',
         ],
         [
-            'url' => '../revision/4function.php',
+            'url' => '../oop8/revision/4function.php',
             'name' => '(4) Fonction',
         ],
     ]
@@ -38,7 +42,7 @@
 // SVG: Scalable Vector Graphic
 ?>
 
-<link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../oop8/styles/navbar.css">
 
 <nav>
     <svg id="menuButton" width="32" height="32" viewBox="0 0 1080 1080" fill="#245195">
@@ -60,4 +64,4 @@
     </ul>
 </nav>
 
-<script src="../script/navbar.js"></script>
+<script src="../oop8/script/navbar.js"></script>

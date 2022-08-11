@@ -69,11 +69,11 @@
     <body>
 
             <?php 
-            include_once "../components/navbar.php"; 
+            include_once "/J1/components/navbar.php"; 
             ?>
             <h1>(III) Loops (JOUR2)</h1>
-            <!-- (myPATH) http://localhost/y.doranco-6-OOP/J1/revision/3loop-array.php -->
-            <ol>
+            <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/3loop-array.php -->
+            <!-- <ol>
                 <li>
                     <a href="../index.php">(0) Home Page</a>
                 </li>
@@ -83,7 +83,7 @@
                 <li>
                     <a href="2condition.php">(II)Condition</a>
                 </li>
-            </ol>
+            </ol> -->
 
             <section>
                 <?php 
@@ -238,6 +238,7 @@
             ?>
 
             <!-- cours1 (push, pop) JOUR3 -->
+            <!-- (10) Fonctions natives des tableaux -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -246,6 +247,7 @@
                     foreach($cours1 as $cle => $valeur){
                         echo "<p>La clé: $cle</p>";
                         echo "<p>La valeur: $valeur</p>";
+                        var_dump($valeur); // changé (à revoir)
                     }
                     var_dump($cours1);
                     // ajouter un élém à la fin du array

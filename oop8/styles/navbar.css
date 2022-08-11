@@ -49,3 +49,12 @@ nav {
     padding: 20px;
   }
 }
+
+
+
+/* <?php 
+    function fatiha($smart){
+        echo '<p>' . $smart . '</p>';
+    }
+    fatiha("I am a very smart girl, ");
+ ?> */
