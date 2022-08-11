@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>PHP-OOP-2 (conditions)</title>
-        <meta name="description" content="PHP-OOP-2 (conditions)">
+        <title>PHP-OOP8 (conditions)</title>
+        <meta name="description" content="PHP-OOP8 (conditions)">
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
     </head>
 
@@ -18,7 +18,7 @@
         
         <!-- TITLE -->
         <section>
-            <h1>(II) Conditions (JOUR2)</h1>
+            <h1>PHP-OOP8 (II) Conditions</h1>
             <!-- <ol>
                 <li>
                     <a href="../index.php">(0) Home Page</a>

@@ -21,9 +21,9 @@
 
         <?php
         echo "<p>Hello World - testing</p>";
-        $exemple = "EXEMPLE";
+        $exemple = "exemple";
         var_dump($GLOBALS['_GET']);
-        echo '<h2>' . $GLOBALS['_GET']['name'] . '</h2>'
+        echo '<h2>' . $GLOBALS['_GET']['name'] . '</h2>'; // error WARNING 
         ?>
 
 

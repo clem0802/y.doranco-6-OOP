@@ -3,10 +3,10 @@
     $links = [
         [
             'url' => '../oop8/index.php',
-            'name' => '(0) HomePage (ACCUEIL) - index.php',
+            'name' => '(0) Accueil (index.php)',
         ],
         [
-            'url' => '../oop8/revision/1type-var.php',
+            'url' => '/oop8/revision/1type-var.php',
             'name' => '(1) Type & Variable',
         ],
         [

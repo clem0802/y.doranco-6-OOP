@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="../styles/navbar.css"> -->
 
-        <title>PHP-OOP-1 (Types & Variables)</title>
-        <meta name="description" content="PHP-OOP-1 (types & variables)">
+        <title>PHP-OOP8 (types & variables)</title>
+        <meta name="description" content="PHP-OOP8 (types & variables)">
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
     </head>
 
@@ -14,7 +15,7 @@
         <?php 
             include_once "../components/navbar.php"; 
         ?>
-        <h1>PHP-OOP-1 (I) Types & Variables (JOUR1)</h1>
+        <h1>PHP-OOP8 (I) Types & Variables</h1>
         <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/1type-var.php -->
 
 
@@ -141,5 +142,6 @@
             echo "<br>";
             echo "<br>";
         ?>
+
     </body>
 </html>

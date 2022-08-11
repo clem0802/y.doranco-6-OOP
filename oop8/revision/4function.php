@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>PHP-OOP (fonction)</title>
-        <meta name="description" content="PHP-OOP (fonction)">
+        <title>PHP-OOP8 (functions)</title>
+        <meta name="description" content="PHP-OOP8 (functions)">
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
     </head>
 
@@ -14,7 +14,7 @@
         <?php 
         include_once '../components/navbar.php';
         ?>
-        <h1>Les Functions</h1>
+        <h1>PHP-OOP8 (IV) Functions</h1>
          <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/4function.php -->
 
 

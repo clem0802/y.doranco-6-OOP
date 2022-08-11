@@ -60,8 +60,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>PHP-OOP-2 (loops)</title>
-        <meta name="description" content="PHP-OOP-2 (loops)">
+        <title>PHP-OOP8 (loops)</title>
+        <meta name="description" content="PHP-OOP8 (loops)">
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
         </head>
     </head>
@@ -71,7 +71,7 @@
             <?php 
             include_once "../components/navbar.php"; 
             ?>
-            <h1>(III) Loops (JOUR2)</h1>
+            <h1>PHP-OOP8 (III) Loops & Arrays</h1>
             <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/3loop-array.php -->
             <!-- <ol>
                 <li>
