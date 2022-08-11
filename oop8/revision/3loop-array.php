@@ -69,7 +69,7 @@
     <body>
 
             <?php 
-            include_once "/J1/components/navbar.php"; 
+            include_once "../components/navbar.php"; 
             ?>
             <h1>(III) Loops (JOUR2)</h1>
             <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/3loop-array.php -->

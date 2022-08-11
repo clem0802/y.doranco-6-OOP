@@ -12,7 +12,7 @@
 
     <body>
         <?php 
-        include_once '/J1/components/navbar.php';
+        include_once '../components/navbar.php';
         ?>
         <h1>Les Functions</h1>
          <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/4function.php -->
