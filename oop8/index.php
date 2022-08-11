@@ -16,7 +16,7 @@
         <?php 
             include_once "./components/navbar.php"; 
         ?>
-        <h1>PHP-OOP-1(08/08) (Samy)</h1>
+        <h1>PHP-OOP8 (le 8 août) (Samy)</h1>
         <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/index.php -->
 
         <?php
