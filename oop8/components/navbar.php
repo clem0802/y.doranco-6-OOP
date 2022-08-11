@@ -1,20 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>PHP-OOP-navbar</title>
-        <meta name="description" content="PHP-OOP-1">
-        <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
-    </head>
-    <body>
-        
-    </body>
-</html> -->
 
-<!-- <h1>Je suis un titre dans un autre fichier</h1> -->
 <?php 
     $links = [
         [
