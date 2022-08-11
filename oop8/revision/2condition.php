@@ -18,7 +18,7 @@
         
         <!-- TITLE -->
         <section>
-            <h1>PHP-OOP8 (II) Conditions</h1>
+            <h1>PHP-OOP8-Samy (II) Conditions</h1>
             <!-- <ol>
                 <li>
                     <a href="../index.php">(0) Home Page</a>

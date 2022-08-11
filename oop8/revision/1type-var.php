@@ -15,7 +15,7 @@
         <?php 
             include_once "../components/navbar.php"; 
         ?>
-        <h1>PHP-OOP8 (I) Types & Variables</h1>
+        <h1>PHP-OOP8-Samy (I) Types & Variables</h1>
         <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/1type-var.php -->
 
 
