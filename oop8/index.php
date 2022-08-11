@@ -27,19 +27,6 @@
         ?>
 
 
-        <!-- <ol>
-            <li>
-                <a href="revision/1type-var.php">(I) Type et Variable</a>
-            </li>
-            <li>
-            <a href="revision/2condition.php">(II) Condition</a>
-            </li>
-            <li>
-            <a href="revision/3loop-array.php">(III) Loop</a>
-            </li>
-        </ol> -->
-
-
 
 
         <?php
