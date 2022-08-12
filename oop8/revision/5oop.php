@@ -128,9 +128,9 @@
 
 
             // instancier d'autres objets
-            $user1 = new User("Patte", "patte@gmail.com", "1234");
+            $user1 = new User("Glenn", "glenn@gmail.com", "1234");
             $user1->renderUser();
-            $user2 = new User("Patrouille", "patrouille@gmail.com", "12345");
+            $user2 = new User("Gould", "gould@gmail.com", "12345");
             $user2->renderUser();
             echo "<hr>";
             ?>
