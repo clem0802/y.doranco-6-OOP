@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+            crossorigin="anonymous"
+        />
 
         <title>PHP-OOP8 (functions)</title>
         <meta name="description" content="PHP-OOP8 (functions)">
@@ -14,11 +21,13 @@
         <?php 
         include_once '../components/navbar.php';
         ?>
+
         <h1>PHP-OOP8-Samy (IV) Functions</h1>
          <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/4function.php -->
 
 
         <!-- (1) Basic Functions -->
+        <!-- ----------------------------------------- -->
         <section>
             <?php 
                 echo "<h3>(1) Basic Functions</h3>";
@@ -38,6 +47,7 @@
 
         <!-- (2) Functions + parameters -->
         <!-- (3) EXO1, 5 functions, +-*/ -->
+        <!-- ----------------------------------------- -->
         <section>
             <?php 
                 echo "<h3>(2) Functions + parameters</h3>";
@@ -65,6 +75,9 @@
                 echo "<hr>";
             ?>
 
+
+            <!-- (3) EXO, 5 functions -->
+            <!-- ----------------------------------------- -->
             <?php
             // créer 5 fonctions qui prennent deux paramètres a et b
             // (1) add: 
@@ -103,12 +116,12 @@
                 }
                 mod(14,3);
                 echo "<hr>";
-
             ?>
         </section>
 
 
         <!-- (4) EXO2 afficher an array FRUITS -->
+        <!-- ----------------------------------------- -->
         <section>
             <?php 
                 echo "<h3>(4) EXO2 afficher an array</h3>";
@@ -133,7 +146,8 @@
         </section>
 
 
-        <!-- (5) EXO3, afficher table Multiplication -->
+        <!-- (5) EXO3, afficher 1 table Multiplication -->
+        <!-- ----------------------------------------- -->
         <section>
             <?php 
                 echo "<h3>(5) EXO3 afficher une table de multiplication</h3>";
@@ -157,7 +171,9 @@
                 function multiTab($num){
                     for($i=0; $i<count($num); $i++){
                         for($j=0; $j<count($num); $j++){
-                            echo $i*$j;
+                            // echo $i*$j;
+                            echo "<p class='row col-1 justify-content-center align-items-center'>
+                            $i x $j = " . ($i * $j) . "</p>";
                             echo "<br>";
                         }
                         echo "<hr>";
@@ -171,6 +187,7 @@
 
 
         <!-- (6) RETURN of a Function -->
+        <!-- ----------------------------------------- -->
         <section>
             <?php 
             echo "<h3>(6) RETURN of a Function</h3>";
@@ -205,6 +222,9 @@
         <!-- ... ... -->
         <!-- $somme= 75 / 6 = 12.5 -->
 
+
+        <!-- (7) Function, the AVERAGE -->
+        <!-- ----------------------------------------- -->
         <section>
             <?php 
             echo "<h3>(7) Function, the AVERAGE</h3>";

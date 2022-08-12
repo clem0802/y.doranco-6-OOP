@@ -1,3 +1,7 @@
+<title>PHP-OOP8 (Samy)</title>
+<meta name="description" content="PHP-OOP8">
+<link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
+
 <?php 
     // connexion la BDD
     $serverName = 'localhost';
@@ -29,11 +33,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="./styles/navbar.css"> -->
 
-        <title>PHP-OOP8 (Samy)</title>
+        <!-- <title>PHP-OOP8 (Samy)</title>
         <meta name="description" content="PHP-OOP8">
-        <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
+        <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png"> -->
     </head>
 
     <body>
@@ -61,9 +64,10 @@
             echo '<hr>';
         ?>
 
+
+        <!-- ************************************ -->
         <!-- loop  over all users' name -->
         <!-- Samy, Gwenn, Fatiha, Snoopy, PawPatrol, Tintin, Ironman -->
-        <!-- ************************************ -->
         <?php 
             foreach($users as $key => $value){
                 echo '
@@ -84,9 +88,9 @@
                 foreach ($fruits as $key => $fruit) {
                     echo "<input type='checkbox' value=$fruit name=$fruit> $fruit";
                 }
-            echo '<hr>';
-            echo '<br>';
-            echo '<br>';
+                echo '<hr>';
+                echo '<br>';
+                echo '<br>';
             ?>
         </p>
 
