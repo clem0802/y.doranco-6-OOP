@@ -17,7 +17,7 @@
         <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
     </head>
 
-    <body>
+    <body class="m-2">
         <?php 
         include_once '../components/navbar.php';
         ?>
@@ -164,6 +164,7 @@
                 TableMul(5);
                 TableMul(12);
                 echo "<hr>";
+                echo "<hr>";
 
                 // ******************************************
                 // (My Solution)
@@ -172,7 +173,7 @@
                     for($i=0; $i<count($num); $i++){
                         for($j=0; $j<count($num); $j++){
                             // echo $i*$j;
-                            echo "<p class='row col-1 justify-content-center align-items-center'>
+                            echo "<p class='row justify-content-center align-items-center'>
                             $i x $j = " . ($i * $j) . "</p>";
                             echo "<br>";
                         }
@@ -190,22 +191,22 @@
         <!-- ----------------------------------------- -->
         <section>
             <?php 
-            echo "<h3>(6) RETURN of a Function</h3>";
+                echo "<h3>(6) RETURN of a Function</h3>";
 
-            function createP($text){ // SAM !!!
-                $lePara = "<p>$text</p>"; // <p>SAM !!!</p>
-                return $lePara; // retourner la variable -> <p>SAM !!!</p>
-            }
+                function createP($text){ // SAM !!!
+                    $lePara = "<p>$text</p>"; // <p>SAM !!!</p>
+                    return $lePara; // retourner la variable -> <p>SAM !!!</p>
+                }
 
-            $para1 = createP("SAM !!!");
-            echo $para1;
-            echo createP('1er paragraphe');
-            echo createP('2ème paragraphe');
-            // f(x) = 2x + 5
-            // f(2) = 2x2 + 5 = 9
-            // une fonction peut être paramétrée
+                $para1 = createP("SAM !!!");
+                echo $para1;
+                echo createP('1er paragraphe');
+                echo createP('2ème paragraphe');
+                // f(x) = 2x + 5
+                // f(2) = 2x2 + 5 = 9
+                // une fonction peut être paramétrée
 
-            echo "<hr>";
+                echo "<hr>";
             ?>
         </section>
 
@@ -227,20 +228,20 @@
         <!-- ----------------------------------------- -->
         <section>
             <?php 
-            echo "<h3>(7) Function, the AVERAGE</h3>";
-            function moyenne($notes){
-                $somme = 0;
-                foreach($notes as $key => $note){
-                    $somme = $somme + $note;
+                echo "<h3>(7) Function, the AVERAGE</h3>";
+                function moyenne($notes){
+                    $somme = 0;
+                    foreach($notes as $key => $note){
+                        $somme = $somme + $note;
+                    }
+                    return $somme / count($notes);
                 }
-                return $somme / count($notes);
-            }
-            $lesNotes = [12, 20, 15, 8, 7, 13];
-            echo moyenne($lesNotes);
+                $lesNotes = [12, 20, 15, 8, 7, 13];
+                echo moyenne($lesNotes);
 
-            echo "<hr>";
-            echo "<br>";
-            echo "<br>";
+                echo "<hr>";
+                echo "<br>";
+                echo "<br>";
             ?>
         </section>
         

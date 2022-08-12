@@ -27,6 +27,28 @@
 ?>
 
 
+<!-- ************************************ -->
+<!-- cours oop8 - JOUR 5 -->
+<?php
+    // Pour les erreurs:
+    $nomError = "";
+    // teste si l'utilisateur a tapé un nom dans l'input
+    if(isset($_GET['nom'])){
+        $nom = $_GET['nom'];
+        if($nom === ""){
+            $nomError = "Le nom ne peut pas être vide!";
+        } else {
+            $addUserQuery = "INSERT INTO users (nom) VALUE ('$nom')";
+            $addUserRequest = mysqli_query($dbConnect, $addUserQuery);
+            header('Location: /y.doranco-6-OOP/oop8/index.php');
+        }
+
+    }
+
+    // echo '<script>le nomJS = ' . $nom . '</script>';
+?>
+
+
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -47,22 +69,14 @@
         <h1>PHP-OOP8 (le 8 août) (Samy)</h1>
         <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/index.php -->
 
-
         <form>
-            <input type="text" name="nom" placeholder="Entrez votre nom:">
+            <input type="text" name="nom" placeholder="Add a new user:">
+            <!-- <p>Nom ne peut pas être vaide!</p> -->
+            <?php echo "<p>$nomError</p>" ?>
+            <?="<p>$nomError</p>"?>
             <br />
             <button name="selectFruits" value="SelectFruit">Valider</button>
         </form>
-
-        <?php
-            $exemple = "exemple";
-            var_dump($GLOBALS['_GET']);
-
-            if (isset($GLOBALS['_GET']['nom'])) {
-                echo '<h2>' . $GLOBALS['_GET']['nom'] . '</h2>';
-            }
-            echo '<hr>';
-        ?>
 
 
         <!-- ************************************ -->
@@ -79,6 +93,18 @@
             }
             echo '<hr>';
         ?>
+
+
+        <?php
+            // $exemple = "exemple";
+            // var_dump($GLOBALS['_GET']);
+
+            // if (isset($GLOBALS['_GET']['nom'])) {
+            //     echo '<h2>' . $GLOBALS['_GET']['nom'] . '</h2>';
+            // }
+            // echo '<hr>';
+        ?>
+
 
         <!-- ************************************ -->
         <label for="choix">Quel sont vos fruits préférés?</label>

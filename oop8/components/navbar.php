@@ -3,23 +3,27 @@
     $links = [
         [
             'url' => '/y.doranco-6-OOP/oop8/index.php',
-            'name' => '(0) Accueil (index.php)',
+            'name' => '0/ Accueil (index.php)',
         ],
         [
             'url' => '/y.doranco-6-OOP/oop8/revision/1type-var.php',
-            'name' => '(1) Type & Variable',
+            'name' => '1/ Type & Variable',
         ],
         [
             'url' => '/y.doranco-6-OOP/oop8/revision/2condition.php',
-            'name' => '(2) Condition',
+            'name' => '2/ Condition',
         ],
         [
             'url' => '/y.doranco-6-OOP/oop8/revision/3loop-array.php',
-            'name' => '(3) Loop & Array',
+            'name' => '3/ Loop & Array',
         ],
         [
             'url' => '/y.doranco-6-OOP/oop8/revision/4function.php',
-            'name' => '(4) Fonction',
+            'name' => '4/ Fonction',
+        ],
+        [
+            'url' => '/y.doranco-6-OOP/oop8/revision/5oop.php',
+            'name' => '5/ Orienté Objet',
         ],
     ]
 

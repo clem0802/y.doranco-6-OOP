@@ -68,12 +68,14 @@
     <body>
 
             <?php 
-            include_once "../components/navbar.php"; 
+                include_once "../components/navbar.php"; 
             ?>
             <h1>PHP-OOP8-Samy (III) Loops & Arrays</h1>
             <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/revision/3loop-array.php -->
 
 
+            <!-- (1)(2) Loop FOR  += -->
+            <!-- ------------------------------------------------- -->
             <section>
                 <?php 
                 // (1) Loop FOR +=1
