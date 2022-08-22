@@ -36,7 +36,7 @@
             ?>
 
             <?php
-                echo "<h3>(2) condition IF  ELSE</h3>";
+                echo "<h3>(2) condition IF & ELSE</h3>";
                 if($isPermis){
                     echo "<p>Vous avez le permis.</p>";
                     echo "<p>Vous pouvez conduire!</p>";

@@ -42,7 +42,6 @@
             $addUserRequest = mysqli_query($dbConnect, $addUserQuery);
             header('Location: /y.doranco-6-OOP/oop8/index.php');
         }
-
     }
 
     // echo '<script>le nomJS = ' . $nom . '</script>';

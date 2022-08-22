@@ -207,6 +207,7 @@
             User::sayHello();
             $users = [$user1, $user2, $user3, new User("Bach", 'bach@exemple.com', "4567")];
             User::renderUsers($users);
+            echo "<hr>";
             ?>
         </section>
 
@@ -216,7 +217,7 @@
         <section>
             <?php 
             echo "<h3>(7) Héritage</h3>";
-            $eleve1 = new Eleve("Toto-nom", "Tata-prenom");
+            $eleve1 = new Eleve("Toto", "Tata", ["PHP"]);
             $eleve1->renderPersonne();
             ?>
         </section>

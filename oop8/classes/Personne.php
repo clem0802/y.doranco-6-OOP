@@ -44,8 +44,8 @@
 
 
     class Eleve extends Personne{
-        private $cours;
-        public function __constuct($nom, $prenom, $cours){
+        public $cours;
+        public function __construct($nom, $prenom, $cours){
             parent::__construct($nom, $prenom);
             $this->cours = $cours;
         }
@@ -53,23 +53,25 @@
         public function getCours(){
             return $this->cours;
         }
-        public function setCours($newCours){
+        public function addCours($newCours){
             array_push($newCours);
         }
 
         public function renderCours(){
+            var_dump($this->cours);
             foreach($this->cours as $key =>$value){
                 echo '<p>' . $value . '</p>';
             }
         }
+
+        // ici ça OVERRIDE la fonction renderPersonne() du parent
         public function renderPersonne(){
             echo '<div>
-                    <p>' . $this->getFirstName . '</p>
-                    <p>' . $this->getLastName . '</p>
+                    <p>' . $this->getFirstName() . '</p>
+                    <p>' . $this->getLastName() . '</p>
                 </div>
             ';
             $this->renderCours(); 
-            // ici ça override la fonction renderPersonne() du parent
         }
     }
 ?>
