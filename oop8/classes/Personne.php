@@ -1,8 +1,8 @@
 <?php 
     class Personne{
         // propriétés
-        private $firstName;
-        private $lastName;
+        protected $firstName;
+        protected $lastName;
 
         // le constructeur
         public function __construct($prenom, $nom){

@@ -1,8 +1,14 @@
 <?php 
+    // var_dump(__FILE__);
+    // var_dump(dirname("/"));
+
+    // include_once __DIR__ . '/../classes/Personne.php';
+    // include_once __DIR__ . '/../classes/User.php';
+    // include_once __DIR__ . '/../classes/Animals.php';
+
     include_once '../classes/Personne.php';
     include_once '../classes/User.php';
     include_once '../classes/Animals.php';
-    include_once '../classes/Affichable.php';
 ?>
 
 
@@ -258,7 +264,7 @@
         <!-- ----------------------------------------- -->
         <section> 
             <?php 
-                echo "<h3>(9) Interfaces</h3>";
+                echo "<h3>(9) Interfaces (+ Affichable.php)</h3>";
                 $etres = [$personne1, $dog1, $personne2, $cat1, $bird1, $wolf1];
                 foreach($etres as $key => $etre){
                     $etre->render();

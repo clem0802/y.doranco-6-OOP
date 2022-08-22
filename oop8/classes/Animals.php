@@ -1,13 +1,16 @@
 <?php 
-// include_once '/y.doranco-6-OOP/oop8/classes/Affichable.php';
-include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichable.php';
+// WEEK OF PROJECT - SAMY (22/08/2022)
+
+include_once '../classes/Affichable.php';
+// include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichable.php';
+
 
     // classe abstrate n'est pas instanciable
-    abstract class Animals implements Affichable{
+    abstract class Animals implements Affichable {
         protected $name;
         protected $age;
         // select $name or $age
-        // click droit, Insert PHP8 Getter & Setter (extension vscode)
+        // click droit puis => Insert PHP8 Getter & Setter (extension vscode)
 
         public function __construct($nom, $age){
             $this->age = $age;
@@ -41,11 +44,11 @@ include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichab
         }
 
         // ci-dessous, abstract function, pour éviter des oublis des collègues
-        abstract function nutrition();
+        abstract public function nutrition();
     }
 
     
-    class Dog extends Animals implements Affichable {  
+    class Dog extends Animals {  
         public function nutrition(){
             echo "Et je mange de la pâtée";
         }
@@ -54,7 +57,7 @@ include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichab
             $this->renderAnimal();
         }
     }
-    class Cat extends Animals implements Affichable {  
+    class Cat extends Animals {  
         public function nutrition(){
             echo "Et je mange des croquettes";
         }
@@ -63,7 +66,7 @@ include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichab
             $this->renderAnimal();
         }
     }
-    class Bird extends Animals implements Affichable {  
+    class Bird extends Animals {  
         public function nutrition(){
             echo "Et je mange des graines";
         }
@@ -74,19 +77,19 @@ include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichab
     }
 
     // Samy ajoute ça pour mon test de Wolf
-    class Wolf extends Animals implements Affichable {
+    class Wolf extends Animals {
         public function nutrition(){
             echo "Et je mange des saucissons";
             echo "<br>";
-        }
-        public function render(){
-            echo '<p>Je suis un loup</p>';
-            $this->renderAnimal();
         }
         public function capacity(){
             echo "D'ailleurs, je suis capable de courir, aboyer, m'asseoir, étudier à l'école, faire la cuisine, faire le ménage, faire la vaisselle, danser, protéger mon maître,...";
             echo "<br>";
             echo "<br>";
+        }
+        public function render(){
+            echo '<p>Je suis un loup</p>';
+            $this->renderAnimal();
         }
     }
 ?>
