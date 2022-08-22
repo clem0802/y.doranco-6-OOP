@@ -243,7 +243,8 @@
                 $cat1 = new Cat("Felix", 2);
                 $bird1 = new Bird("Titi", 1);
                 $wolf1 = new Wolf("Wolffy", 3);
-                $animals = [$dog1, $cat1, $bird1, $wolf1]; //
+                $lion1 = new Lion("Liooon", 3);
+                $animals = [$dog1, $cat1, $bird1, $wolf1, $lion1]; //
                 foreach ($animals as $key => $animal){
                     $animal->renderAnimal();
                     $animal->nutrition();
@@ -269,9 +270,31 @@
                 foreach($etres as $key => $etre){
                     $etre->render();
                 }
+                echo "<hr>";
                 // $dog1 = new Dog("Bob", 5);
                 // $dog1->renderAnimal();
                 // $dog1->nutrition();
+            ?>
+        </section>
+
+        
+        <!-- (10) Typé -->
+        <!-- ----------------------------------------- -->
+        <section>
+            <?php 
+                echo "<h3>(10) Typer les paramètres d'une fonction</h3>";
+                function affiche(string $text){
+                    echo "<p>$text</p>";
+                }
+                affiche("text");
+
+                function afficheAnimal(Affichable $animal){
+                    $animal->render();
+                }
+                afficheAnimal($dog1);
+                afficheAnimal($cat1);
+                afficheAnimal($personne1);
+                echo "<hr>";
             ?>
         </section>
 

@@ -1,5 +1,7 @@
 <?php 
-    class Personne{
+include_once '../classes/Affichable.php';
+
+    class Personne implements Affichable{
         // propriétés
         protected $firstName;
         protected $lastName;
@@ -26,6 +28,10 @@
         public function getLastName(){
             return $this->lastName;
             echo "<br>";
+        }
+        // ci-dessous pour Affichable.php
+        public function getName(){
+            return $this->firstName . ' '. $this->lastName;
         }
 
 

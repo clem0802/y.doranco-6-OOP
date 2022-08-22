@@ -92,4 +92,13 @@ include_once '../classes/Affichable.php';
             $this->renderAnimal();
         }
     }
-?>
+    
+    class Lion extends Animals {
+        public function nutrition(){
+            echo "Et je mange de la viande";
+        }
+        public function render(){
+            echo '<p>Je suis un lion</p>';
+            $this->renderAnimal();
+        }
+    }
