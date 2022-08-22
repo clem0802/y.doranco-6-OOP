@@ -3,6 +3,7 @@
 <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png">
 
 <?php 
+    var_dump($_GET);
     // connexion la BDD
     $serverName = 'localhost';
     $dbUsername= "root";
@@ -47,17 +48,13 @@
     // echo '<script>le nomJS = ' . $nom . '</script>';
 ?>
 
-
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- <title>PHP-OOP8 (Samy)</title>
-        <meta name="description" content="PHP-OOP8">
-        <link rel="shortcut icon" href="https://www.onespan.com//sites/default/files/blog/images/logo-php-adbac78231.png"> -->
     </head>
 
     <body>
@@ -74,7 +71,7 @@
             <?php echo "<p>$nomError</p>" ?>
             <?="<p>$nomError</p>"?>
             <br />
-            <button name="selectFruits" value="SelectFruit">Valider</button>
+            <button type="submit" name="selectFruits" value="SelectFruit">Valider</button>
         </form>
 
 
@@ -171,15 +168,3 @@
     </body>
 </html>
 
-
-
-<!-- array(7) 
-{ 
-    [0]=> array(2) { ["id"]=> string(1) "1" ["nom"]=> string(4) "Samy" } 
-    [1]=> array(2) { ["id"]=> string(1) "2" ["nom"]=> string(5) "Gwenn" } 
-    [2]=> array(2) { ["id"]=> string(1) "3" ["nom"]=> string(6) "Fatiha" } 
-    [3]=> array(2) { ["id"]=> string(1) "4" ["nom"]=> string(6) "Snoopy" } 
-    [4]=> array(2) { ["id"]=> string(1) "5" ["nom"]=> string(9) "PawPatrol" } 
-    [5]=> array(2) { ["id"]=> string(1) "6" ["nom"]=> string(6) "Tintin" } 
-    [6]=> array(2) { ["id"]=> string(1) "7" ["nom"]=> string(7) "Ironman" }
-} -->

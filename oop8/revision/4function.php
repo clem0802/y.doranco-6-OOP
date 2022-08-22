@@ -146,7 +146,7 @@
         </section>
 
 
-        <!-- (5) EXO3, afficher 1 table Multiplication -->
+        <!-- (5) EXO3, afficher 1 Table Multiplication -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 
@@ -224,7 +224,7 @@
         <!-- $somme= 75 / 6 = 12.5 -->
 
 
-        <!-- (7) Function, the AVERAGE -->
+        <!-- (7) Function, (somme & moyenne) the AVERAGE -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 

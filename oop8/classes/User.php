@@ -48,7 +48,7 @@
             return $this;
         }
 
-        // Méthodes statiques
+        // Méthodes Statiques
         public static function sayHello(){
             $test = "test";
             echo 'Salut je suis la classer User';

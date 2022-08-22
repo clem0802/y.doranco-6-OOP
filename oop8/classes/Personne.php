@@ -40,11 +40,17 @@
             return $this;
             echo "<br>";
         }
+
+        // semaine PROJET du 22/08
+        public function render(){
+            echo '<p>Je suis une personne</p>';
+            $this->renderPersonne();
+        }
     }
 
 
     class Eleve extends Personne{
-        public $cours;
+        private $cours;
         public function __construct($nom, $prenom, $cours){
             parent::__construct($nom, $prenom);
             $this->cours = $cours;
@@ -65,6 +71,8 @@
         }
 
         // ici ça OVERRIDE la fonction renderPersonne() du parent
+        // si firstName et lastName du parent sont "protected"
+        // en base ce sera <p>' . $this->firstName() . '</p>
         public function renderPersonne(){
             echo '<div>
                     <p>' . $this->getFirstName() . '</p>

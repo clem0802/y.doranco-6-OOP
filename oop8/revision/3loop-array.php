@@ -128,7 +128,7 @@
             ?>
 
 
-            <!-- (4) listCours (Array) -->
+            <!-- (4) listCours (ARRAY) -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -137,8 +137,8 @@
                 // array(6) { [0]=> string(4) "HTML" [1]=> string(3) "CSS" [2]=> string(10) "JavaScript" [3]=> string(3) "PHP" [4]=> string(5) "React" [5]=> string(9) "WordPress" }
 
                 var_dump($listCours);
-                echo '<p>elem at position 1: ' . $listCours[1] . '</p>'; // CSS
-                echo '<p>elem at position 3: ' . $listCours[3] . '</p>'; // PHP
+                echo '<p>Elem at position 1: ' . $listCours[1] . '</p>'; // CSS
+                echo '<p>Elem at position 3: ' . $listCours[3] . '</p>'; // PHP
                 echo '<p>taille de ARRAY: ' . count($listCours) . '</p>'; // 6
                 echo "<hr>";
                 ?>
@@ -187,7 +187,7 @@
             <?php 
                 echo "<h3>(7) Array - user2 (Tableau Associatif)</h3>";
                 $user2 = [
-                    'username'=>'Samantha', 
+                    'username'=>'Samy', 
                     'avatar' => "https://images.unsplash.com/photo-1492175742197-ed20dc5a6bed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxhZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", 
                     'email'=>'sam.djm93@gmail.com',  
                     'age'=>28, 
@@ -258,7 +258,7 @@
 
 
             <!-- ------------------------------------------------- --> 
-            <!-- (push, pop) (10) Fonctions natives des tableaux (arrays) -->
+            <!-- (push, pop) (10) Fonctions natives des tableaux (FOREACH) -->
             <!-- ------------------------------------------------- --> 
             <section>
                 <?php 
@@ -283,6 +283,7 @@
                     echo "<hr>";
                 ?>
             </section>
+
 
             <!-- <h3>(11) loop spécial tableau (array) -->
             <!-- ------------------------------------------------- --> 

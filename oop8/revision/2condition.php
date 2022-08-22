@@ -105,7 +105,7 @@
         <!-- (5) Opérateurs de logique -->
         <section>
             <?php 
-                echo "<h3>(5) Opérateurs de logique: && ||</h3>";
+                echo "<h3>(5-1) Opérateurs de logique: && ||</h3>";
                 echo "<p>opérateur &&</p>";
                 $isPermis = true;
                 $isMajeur = true;
@@ -115,6 +115,10 @@
                     echo "<p>Vous ne pouvez pas conduire.</p>";
                 }
                 echo "<hr>";
+                //true xor true = false
+                //true xor false = true
+                //false xor true = true
+                //false xor false = false
 
 
                 echo "<p>opérateur ||</p>";
@@ -126,6 +130,28 @@
                     echo '<p>Aucun user n\'a gagné</p>';
                 }
                 echo "<hr>";
+            ?>
+
+            <?php 
+            echo "<h3>(5-2) le XOR</h3>";
+            echo "<p>XOR est &+| (and + or)</p>";
+            if ($winner1 xor $winner2){
+                echo 'Un joueur a gagné';
+            } else{
+                echo 'Aucun joueur n\'a gagné ou les deux!';
+            }
+            // true xor true = false
+            // true xor false = true
+            // false xor true = true
+            // false xor false = false
+
+            echo "<p>version ALT</p>";
+            if (($winner1 && !$winner2) || (!$winner1 && $winner2)){
+            echo 'Un joueur a gagné';
+            } else {
+                echo 'Aucun joueur n\'a gagné ou les deux!';
+            }
+            echo "<hr>";
             ?>
         </section>
 

@@ -1,6 +1,8 @@
 <?php 
     include_once '../classes/Personne.php';
     include_once '../classes/User.php';
+    include_once '../classes/Animals.php';
+    include_once '../classes/Affichable.php';
 ?>
 
 
@@ -219,9 +221,53 @@
             echo "<h3>(7) Héritage</h3>";
             $eleve1 = new Eleve("Toto", "Tata", ["PHP"]);
             $eleve1->renderPersonne();
+            echo "<hr>";
             ?>
         </section>
 
+
+        <!-- (8) Classes Abstraites -->
+        <!-- ----------------------------------------- -->
+        <section>
+            <?php 
+                echo "<h3>(8) Classes Abstraites (DOG)(CAT)...</h3>";
+                // on ne peut pas instancier une classe abstraite
+                // $animal1 = new Animals('Sam', 10);
+                $dog1 = new Dog("Bob", 5);
+                $cat1 = new Cat("Felix", 2);
+                $bird1 = new Bird("Titi", 1);
+                $wolf1 = new Wolf("Wolffy", 3);
+                $animals = [$dog1, $cat1, $bird1, $wolf1]; //
+                foreach ($animals as $key => $animal){
+                    $animal->renderAnimal();
+                    $animal->nutrition();
+
+                    // echo '<p>' . get_class($animal) . '</p>';
+                    // if(get_class($animal) === "Wolf") {
+                    //     $animal->capacity();
+                    // }
+                    
+                    $animal->capacity();
+                }
+                echo "<hr>";
+            ?>
+        </section>
+
+
+        <!-- (9)les Interfaces -->
+        <!-- ----------------------------------------- -->
+        <section> 
+            <?php 
+                echo "<h3>(9) Interfaces</h3>";
+                $etres = [$personne1, $dog1, $personne2, $cat1, $bird1, $wolf1];
+                foreach($etres as $key => $etre){
+                    $etre->render();
+                }
+                // $dog1 = new Dog("Bob", 5);
+                // $dog1->renderAnimal();
+                // $dog1->nutrition();
+            ?>
+        </section>
 
     </body>
 </html>
