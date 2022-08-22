@@ -9,9 +9,8 @@
     include_once '../classes/Personne.php';
     include_once '../classes/User.php';
     include_once '../classes/Animals.php';
+    include_once '../classes/Coffee.php';
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -236,7 +235,7 @@
         <!-- ----------------------------------------- -->
         <section>
             <?php 
-                echo "<h3>(8) Classes Abstraites (DOG)(CAT)...</h3>";
+                echo "<h3>(8-1) Classes Abstraites (Dog)(Cat)(Wolf)...</h3>";
                 // on ne peut pas instancier une classe abstraite
                 // $animal1 = new Animals('Sam', 10);
                 $dog1 = new Dog("Bob", 5);
@@ -258,6 +257,19 @@
                 }
                 echo "<hr>";
             ?>
+
+            <!-- ----------------------------------------- -->
+            <?php 
+                // echo "<h3>(8-2) Classes Abstraites (COFFEE)</h3>";
+                // $coffee1 = new Coffee("sucre","eau");
+                // $coffee2 = new Coffee("sirop","lait");
+                // $coffees = [$coffee1, $coffee2];
+                // foreach ($coffees as $key => $coffee){
+                //     $coffee->renderCoffee();
+                //     $coffee->nutrition();
+                //     $coffee->fashion();
+                // }
+            ?>
         </section>
 
 
@@ -278,13 +290,13 @@
         </section>
 
         
-        <!-- (10) Typé -->
+        <!-- (10) Typer les paramètres d'une fonction -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 
                 echo "<h3>(10) Typer les paramètres d'une fonction</h3>";
                 function affiche(string $text){
-                    echo "<p>$text</p>";
+                    echo "<p>testing</p>";
                 }
                 affiche("text");
 

@@ -116,14 +116,6 @@
         </p>
 
 
-        <!-- les ÉTAPES -->
-        <!-- ************************************ -->
-        <!-- CINNEXION à la BDD -->
-        <!-- 1.1 Créer la BDD phpMyAdmin -->
-        <!-- 1.2 récupérer les crédentials -->
-        <!-- 1.3 utiliser mysqli_connect(username...) -->
-        <!-- EXÉCUTER la requête QUERY SQL -->
-        <!-- AFFICHER les données -->
 
 
 
@@ -133,7 +125,8 @@
             <input type="text" name="nom" placeholder="Entrez votre nom:">
             <button>Valider</button>
         </form> -->
-<!-- 
+
+        <!-- 
         <form>
             <input type="text" name="nom" placeholder="Cliquez sur vos fruits préférés:">
             <label for="choix">Quel sont vos fruits préférés?</label>

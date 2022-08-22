@@ -50,28 +50,28 @@ include_once '../classes/Affichable.php';
     
     class Dog extends Animals {  
         public function nutrition(){
-            echo "Et je mange de la pâtée";
+            echo "Et je mange de la pâtée.";
         }
         public function render(){
-            echo '<p>Je suis un chien</p>';
+            echo '<p>Je suis un chien.</p>';
             $this->renderAnimal();
         }
     }
     class Cat extends Animals {  
         public function nutrition(){
-            echo "Et je mange des croquettes";
+            echo "Et je mange des croquettes.";
         }
         public function render(){
-            echo '<p>Je suis un chat</p>';
+            echo '<p>Je suis un chat.</p>';
             $this->renderAnimal();
         }
     }
     class Bird extends Animals {  
         public function nutrition(){
-            echo "Et je mange des graines";
+            echo "Et je mange des graines.";
         }
         public function render(){
-            echo '<p>Je suis un oiseau</p>';
+            echo '<p>Je suis un oiseau.</p>';
             $this->renderAnimal();
         }
     }
@@ -79,7 +79,7 @@ include_once '../classes/Affichable.php';
     // Samy ajoute ça pour mon test de Wolf
     class Wolf extends Animals {
         public function nutrition(){
-            echo "Et je mange des saucissons";
+            echo "Et je mange des saucissons.";
             echo "<br>";
         }
         public function capacity(){
@@ -95,10 +95,10 @@ include_once '../classes/Affichable.php';
     
     class Lion extends Animals {
         public function nutrition(){
-            echo "Et je mange de la viande";
+            echo "Et je mange de la viande.";
         }
         public function render(){
-            echo '<p>Je suis un lion</p>';
+            echo '<p>Je suis un lion.</p>';
             $this->renderAnimal();
         }
     }
