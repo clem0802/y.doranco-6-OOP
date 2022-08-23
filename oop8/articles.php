@@ -5,7 +5,7 @@
     // (3) Afficher les articles
     // 3.1 se connecter la BDD
 
-    // var_dump($_GET);
+    var_dump($_POST);
     // connexion la BDD
     $serverName = 'localhost';
     $dbUsername= "root";
@@ -22,6 +22,27 @@
     // var_dump($articles);  // pour véirifer
 
     // 3.3 afficher les articles
+
+    // Étape 2:
+    // 2.1 ajouter un formulaire pour chaque article
+    // 2.2 tester les entrées
+	$commentError = ["text" => '', 'postID' => ''];
+	if (isset($_POST['addComment'])) {
+		if ($_POST['commentaire'] === "") {
+			$commentError['text'] = "Entrez un commentaire!";
+			$commentError['postID'] = $_POST['addComment'];
+		} else {
+            // 2.3 ajouter le commentaire dans la BDD (envoyer ID du commentaire)
+            $commentaire = $_POST['commentaire'];
+            $postID = $_POST['addComment'];
+            // var_dump($postID);
+            $addCommentQuery = "INSERT INTO comments (text, postID) VALUES ('$commentaire','$postID')";
+            $addCommentRequest = mysqli_query($dbConnect, $addCommentQuery);
+        }
+    }
+
+    
+    // 2.4 afficher les commentaires sous chaque article
 ?>
 
 <!-- (myPATH) http://localhost/y.doranco-6-OOP/oop8/articles.php -->
@@ -49,14 +70,21 @@
         <!-- 3.3 afficher les articles -->
         <h1>Articles</h1>
         <?php 
-            foreach($articles as $key => $article){
-                echo '
+    	foreach ($articles as $key => $article) {
+    		echo '
                 <section>
-                    <h2>' .$article['title'] . '</h2>
-                    <p>' .$article['content'] . '</p>
+                <h2>' . $article['title'] . '</h2>
+                <p>' . $article['content'] . '</p>
+
+				<form method="POST">
+					<input type="text" name="commentaire" placeholder="Entrer un commentaire" >
+					' . ($article['id'] == $commentError['postID'] ? $commentError['text'] : '') . '
+					<button type="submit" name="addComment" value="' . $article['id'] . '">Valider</button>
+				</form>
+
                 </section>
-                ';
-            }
+            ';
+    	}
             echo '<br>';
             echo '<br>';
         ?>
