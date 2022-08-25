@@ -38,10 +38,11 @@
             // var_dump($postID);
             $addCommentQuery = "INSERT INTO comments (text, postID) VALUES ('$commentaire','$postID')";
             $addCommentRequest = mysqli_query($dbConnect, $addCommentQuery);
+            header('Location: ./articles.php');
+            // header('Location: /y.doranco-6-OOP/oop8/index.php');
         }
     }
 
-    
     // 2.4 afficher les commentaires sous chaque article
 ?>
 
@@ -71,6 +72,14 @@
         <h1>Articles</h1>
         <?php 
     	foreach ($articles as $key => $article) {
+
+            // chercher les commentaires pour chaque article
+            $getCommentQuery = "SELECT * FROM comments WHERE postID ='" .$article['id']. "'";
+            $getCommentRequest = mysqli_query($dbConnect, $getCommentQuery);
+            // var_dump($getCommentRequest);
+            $comments = mysqli_fetch_all($getCommentRequest, MYSQLI_ASSOC);
+            // var_dump($comments);
+
     		echo '
                 <section>
                 <h2>' . $article['title'] . '</h2>
@@ -84,6 +93,11 @@
 
                 </section>
             ';
+            foreach($comments as $key => $comment){
+                echo '<p>' . $comment['text']. '</p>';
+            }
+
+
     	}
             echo '<br>';
             echo '<br>';

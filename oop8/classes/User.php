@@ -1,6 +1,6 @@
 <?php 
     class User{
-        // propriétés-attribut
+        // attributs = propriétés d'une class
         private $userName;
         private $email;
         private $password;
@@ -12,6 +12,7 @@
             $this->password = $password;
         }
 
+        // une méthode = une fonction appartenant à une class
         // les méthodes instanciation
         public function renderUser(){
             echo '<div>

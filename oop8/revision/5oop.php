@@ -33,6 +33,7 @@
 
 
         <!-- (1) Basic Class -->
+        <!-- PDF1 (p17) -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 
@@ -43,7 +44,7 @@
                 public $firstName = "Samy (basic class)";
                 public $lastName = "Djemai (basic class)";
 
-                function renderDjemai(){
+                public function renderDjemai(){
                     echo '<div>
                             <p>Nom: ' . $this->lastName . '</p>
                             <p>Prénom: ' . $this->firstName . '</p>
@@ -220,6 +221,7 @@
 
 
         <!-- (7) Héritage -->
+        <!-- PDF-1 (p23) ?? (instancier un objet pour 1 class avec construct) -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 

@@ -21,7 +21,7 @@ include_once '../classes/Affichable.php';
         }
 
         // méthodes GETTERS:
-        // (les accesseurs) GETTER => pr récupérer la valeur des attributs
+        // (les Accesseurs) GETTER => pr récupérer la valeur des attributs
         public function getFirstName(){
             return $this->firstName;
         }
@@ -36,7 +36,7 @@ include_once '../classes/Affichable.php';
 
 
         // méthodes SETTERS:
-        // (les mutateurs) SETTER => pr modifier la valeur des attributs
+        // (les Mutateurs) SETTER => pr modifier la valeur des attributs
         public function setFirstName($newFirstName){
             $this->firstName = $newFirstName;
             return $this;
@@ -56,6 +56,7 @@ include_once '../classes/Affichable.php';
 
 
     class Eleve extends Personne{
+        // PDF-1 (p20)  ??
         private $cours;
         public function __construct($nom, $prenom, $cours){
             parent::__construct($nom, $prenom);
