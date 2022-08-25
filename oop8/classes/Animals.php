@@ -2,10 +2,9 @@
 // WEEK OF PROJECT - SAMY (22/08/2022)
 
 include_once '../classes/Affichable.php';
-// include_once 'E:\C-VS(DO5-PHP)\MAMP\htdocs\y.doranco-6-OOP\oop8\classes\Affichable.php';
 
 
-    // classe abstrate n'est pas instanciable
+    // classe abstraite n'est pas instanciable
     abstract class Animals implements Affichable {
         protected $name;
         protected $age;
@@ -22,18 +21,18 @@ include_once '../classes/Affichable.php';
 
 
         public function getName(){
-                return $this->name;
+            return $this->name;
         }
         public function setName($name): self {
-                $this->name = $name;
-                return $this;
+            $this->name = $name;
+            return $this;
         }
         public function getAge(){
-                return $this->age;
+            return $this->age;
         }
         public function setAge($age): self {
-                $this->age = $age;
-                return $this;
+            $this->age = $age;
+            return $this;
         }
     
 

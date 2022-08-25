@@ -1,8 +1,9 @@
 <?php
-class Personne {
+include_once '../classes/Affichable.php';
+class Personne implements Affichable {
 	//Proprietes
-	private $firstName;
-	private $lastName;
+	protected $firstName;
+	protected $lastName;
 
 	//Le constructeur
 	public function __construct($nom, $prenom) {
@@ -24,6 +25,9 @@ class Personne {
 	public function getLastName() {
 		return $this->lastName;
 	}
+	public function getName() {
+		return $this->lastName . ' ' . $this->firstName;
+	}
 
 	//SETTERS
 	public function setLastName($newLastName) {
@@ -34,6 +38,11 @@ class Personne {
 	public function setFirstName($newFirstName) {
 		$this->firstName = $newFirstName;
 		return $this;
+	}
+
+	public function render() {
+		echo '<p>Je suis une personne</p>';
+		$this->renderPersonne();
 	}
 }
 
@@ -61,7 +70,7 @@ class Eleve extends Personne {
 	public function renderPersonne() {
 		echo '
             <div>
-                <p>' . $this->getFirstName() . '</p>
+                <p>' . $this->firstName . '</p>
                 <p>' . $this->getLastName() . '</p>
             </div>
         ';

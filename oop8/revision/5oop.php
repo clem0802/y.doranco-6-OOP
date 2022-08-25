@@ -205,7 +205,8 @@
         </section>
 
 
-        <!-- (6) Méthode Static -->
+        <!-- (6) Méthode Statique -->
+        <!-- PDF-2 (p14)   :: opérateur de résolution de portée -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 
@@ -222,13 +223,14 @@
 
         <!-- (7) Héritage -->
         <!-- PDF-1 (p23) ?? (instancier un objet pour 1 class avec construct) -->
+        <!-- PDF-2 (p1) ?? -->
         <!-- ----------------------------------------- -->
         <section>
             <?php 
-            echo "<h3>(7) Héritage</h3>";
-            $eleve1 = new Eleve("Toto", "Tata", ["PHP"]);
-            $eleve1->renderPersonne();
-            echo "<hr>";
+                echo "<h3>(7) Héritage</h3>";
+                $eleve1 = new Eleve("Toto", "Tata", ["PHP"]);
+                $eleve1->renderPersonne();
+                echo "<hr>";
             ?>
         </section>
 

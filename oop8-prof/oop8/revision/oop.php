@@ -1,6 +1,7 @@
 <?php
-	include_once '../classes/Personne.php';
-	include_once '../classes/User.php';
+	include_once __DIR__ . '/../classes/Personne.php';
+	include_once __DIR__ . '/../classes/User.php';
+	include_once '../classes/Animals.php';
 ?>
 
 
@@ -119,8 +120,57 @@
     <section>
         <h2>Héritage</h2>
         <?php
-        	$eleve1 = new Eleve("Djemai", "Toto", ['PHP']);
+        	$eleve1 = new Eleve("Djemai", "Toto", ['PHP', 'React']);
         	$eleve1->renderPersonne();
+        ?>
+    </section>
+
+    <section>
+        <h2>Classes abstraites</h2>
+        <?php
+        	//On ne peut pas instancier une classe abstraite
+        	//$animal1 = new Animals('Sam', 10);
+        	$dog1 = new Dog("Bob", 5);
+        	$cat1 = new Cat("Felix", 2);
+        	$bird1 = new Bird('Titi', 1);
+        	$wolf1 = new Wolf('Sam', 6);
+        	$animals = [$dog1, $cat1, $bird1, $wolf1];
+
+        	foreach ($animals as $key => $animal) {
+        		$animal->renderAnimal();
+        		$animal->nutrition();
+        		if (get_class($animal) === "Wolf") {
+        			$animal->capacity();
+        		}
+        	}
+        ?>
+    </section>
+    <section>
+        <h2>Les interfaces</h2>
+        <?php
+        	$etres = [$personne1, $dog1, $personne2, $cat1];
+
+        	foreach ($etres as $key => $etre) {
+        		$etre->render();
+        	}
+
+        ?>
+    </section>
+    <section>
+        <h2>Typé les paramètres d'un fonction</h2>
+        <?php
+        	function affiche(string $text) {
+        		echo "<p>$text</p>";
+        	}
+
+        	affiche('Test');
+
+        	function afficheAnimal(Affichable $animal) {
+        		$animal->render();
+        	}
+        	afficheAnimal($dog1);
+        	afficheAnimal($cat1);
+        	afficheAnimal($personne1);
         ?>
     </section>
 </body>

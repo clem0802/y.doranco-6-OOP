@@ -8,17 +8,6 @@
 ?>
 
 <?php
-	//On declarer une variable contenant une chaine de caractères representant la requete SQL
-	$getUserQuery = 'SELECT * FROM users';
-
-	//Créer la requete SQL avec la connexion a la db, et la requete
-	$getUserRequest = mysqli_query($dbConnect, $getUserQuery);
-
-	//Executer la requete SQL, ca retourne un tableau de users:
-	$users = mysqli_fetch_all($getUserRequest, MYSQLI_ASSOC);
-?>
-
-<?php
 	//Pour les erreurs:
 	$nomError = "";
 	//Tester sur si l'utilisateur a tapé un nom dans l'input
@@ -32,6 +21,17 @@
 			header('Location: /oop8/index.php');
 		}
 	}
+?>
+
+<?php
+	//On declarer une variable contenant une chaine de caractères representant la requete SQL
+	$getUserQuery = 'SELECT * FROM users';
+
+	//Créer la requete SQL avec la connexion a la db, et la requete
+	$getUserRequest = mysqli_query($dbConnect, $getUserQuery);
+
+	//Executer la requete SQL, ca retourne un tableau de users:
+	$users = mysqli_fetch_all($getUserRequest, MYSQLI_ASSOC);
 ?>
 
 
@@ -55,19 +55,18 @@
         <?php echo "<p>$nomError</p>" ?>
         <?="<p>$nomError</p>"?>
         <br />
-        <button name="selectFruits" value="SelectFruit">Valider</button>
+        <button type="submit" name="add">Valider</button>
     </form>
 
     <?php
     	foreach ($users as $key => $value) {
     		echo '
                 <div>
-                    <h3>' . $value['nom'] . '</h3>
+        			<h3>' . $value['nom'] . '</h3>
                 </div>
             ';
     	}
     ?>
-
 
     <label for="choix">Quel sont vos fruits préférés</label>
     <p>

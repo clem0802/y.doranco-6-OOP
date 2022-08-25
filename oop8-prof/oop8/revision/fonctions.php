@@ -135,11 +135,11 @@
         		return $lePara;
         	}
 
-        	$para1 = createP("SAM!!!");
+        	$para1 = createP("SAM!!!"); // '<p>SAM!!!</p>';
 
         	echo $para1;
 
-        	echo createP('Un paragraphe');
+        	echo createP('Un paragraphe'); //'<p>Un paragraphe</p>'
 
         	echo createP('Un autre paragraphe');
 
@@ -150,7 +150,7 @@
         <h2>La moyenne</h2>
 
         <?php
-        	//Créer une fonction qui prends un tableau de nombres, elle retourne la moyenn
+        	//Créer une fonction qui prends un tableau de nombres, elle retourne la moyenne
 
         	//[12, 20, 15, 8, 7, 13]
 

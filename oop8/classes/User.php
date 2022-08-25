@@ -38,6 +38,7 @@
         // }
 
 
+        // ---------------------------
         // méthodes SETTERS:
         // (les mutateurs) SETTER => pr modifier la valeur des attributs
         public function setUserName($newUserName){
@@ -49,7 +50,11 @@
             return $this;
         }
 
+
+        // ---------------------------
         // Méthodes Statiques
+        // la pseudo-variable $this n'est pas dispo dans les Méthodes Statiques
+        // PDF-2 (p12)
         public static function sayHello(){
             $test = "test";
             echo 'Salut je suis la classer User';

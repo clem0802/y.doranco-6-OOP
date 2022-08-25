@@ -1,13 +1,13 @@
 <?php
 	$users = [
-		[
+		0 => [
 			'email' => 'sam.djm93@gmail.com',
 			'username' => 'Sam',
 			'age' => 28,
 			'passion' => 'Programmation',
 			'avatar' => "https://img.le-dictionnaire.com/montagne.jpg",
 		],
-		[
+		1 => [
 			'email' => 'clemence@gmail.com',
 			'username' => 'Clémence',
 			'age' => 28,

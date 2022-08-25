@@ -95,7 +95,7 @@
             <p>Le OU: ||</p>
             <?php
             	$isUser1Winner = false;
-            	$isUser2Winner = false;
+            	$isUser2Winner = true;
 
             	if ($isUser1Winner || $isUser2Winner) {
             		echo '<p>Au moins un des utilisateurs a gagné
@@ -107,6 +107,32 @@
             	//true || false = true
             	//false || true = true
             	//false || false = false
+            ?>
+            <p>le xor: xor</p>
+            <?php
+            	if ($isUser1Winner xor $isUser2Winner) {
+            		echo 'Un joueur a gagné';
+            	} else {
+            		echo 'Aucun joueur n\'a gagné ou les deux!';
+            	}
+            	//true xor true = false
+            	//true xor false = true
+            	//false xor true = true
+            	//false xor false = false
+
+            ?>
+            <p>le xor: alt</p>
+            <?php
+            	if (($isUser1Winner && !$isUser2Winner) || (!$isUser1Winner && $isUser2Winner)) {
+            		echo 'Un joueur a gagné';
+            	} else {
+            		echo 'Aucun joueur n\'a gagné ou les deux!';
+            	}
+            	//true xor true = false
+            	//true xor false = true
+            	//false xor true = true
+            	//false xor false = false
+
             ?>
         </section>
 
@@ -147,7 +173,7 @@
             <section>
                 <h2>SWITCH CASE</h2>
                 <?php
-                	$day = date('D');
+                	$day = date('N');
                 	switch ($day) {
                 		case 1:
                 			echo '<p>Lundi</p>';

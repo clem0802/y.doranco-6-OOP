@@ -56,7 +56,10 @@ include_once '../classes/Affichable.php';
 
 
     class Eleve extends Personne{
-        // PDF-1 (p20)  ??
+        // PDF-1 (p20)  
+        // PDF-2 (p16) => parent::
+        // "parent::" permet d'accéder aux attributs et méthodes statiques 
+        // publiques ou protégées, d'une classe à partir de sa class enfant 
         private $cours;
         public function __construct($nom, $prenom, $cours){
             parent::__construct($nom, $prenom);
